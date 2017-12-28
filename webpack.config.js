@@ -1,6 +1,7 @@
 const path = require('path');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const Dotenv = require('dotenv-webpack');
 
 const extractSass = new ExtractTextPlugin({
   filename: '[name].[contenthash].css'
@@ -26,6 +27,10 @@ module.exports = {
     modules: ['src', 'node_modules'],
   },
   plugins: [
+    new Dotenv({
+      path: './.env',
+      safe: true
+    }),
     extractSass,
     html
   ],

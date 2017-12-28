@@ -4,14 +4,25 @@ import {
   BrowserRouter as Router,
   Route
 } from 'react-router-dom';
+import thunk from 'redux-thunk';
+import { createStore, applyMiddleware } from 'redux';
+import { Provider } from 'react-redux';
+
+import reducer from './reducers';
+import {initialTrackers} from 'actions/tracker';
+import Home from 'components/Main';
 
 require('./app.scss');
 
-import Home from 'components/Main';
+const store = createStore(reducer, applyMiddleware(thunk));
+
+store.dispatch(initialTrackers());
 
 render((
-  <Router>
-    <Route path="/" component={Home}>
-    </Route>
-  </Router>
+  <Provider store={store}>
+    <Router>
+      <Route path="/" component={Home}>
+      </Route>
+    </Router>
+  </Provider>
 ), document.getElementById('root'));

@@ -2,4 +2,11 @@
 
 .app-Sidebar {
   flex-grow: 1;
+  background-color: $blue;
+  padding: 22px;
+
+  & > h1 {
+    text-align: center;
+    margin-top: 0;
+  }
 }
