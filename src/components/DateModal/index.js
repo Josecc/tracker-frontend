@@ -3,12 +3,12 @@ import {Desktop} from 'constants/Breakpoints';
 
 require('./index.scss');
 
-export default class Home extends Component {
+export default class DateModal extends Component {
 
   render() {
     return(
-      <div className="app-LogIn">
-        <h1>Welcome</h1>
+      <div className="app-DateModal">
+        <h1>modall....</h1>
       </div>
     );
   }
