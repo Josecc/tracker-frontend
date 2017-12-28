@@ -1,0 +1,53 @@
+{
+  "name": "tracker-frontend",
+  "version": "1.0.0",
+  "description": "GeoSensor Tracker",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Josecc/tracker-frontend.git"
+  },
+  "keywords": [
+    "MapBox",
+    "ReactJS"
+  ],
+  "author": "Jose Canahui",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Josecc/tracker-frontend/issues"
+  },
+  "homepage": "https://github.com/Josecc/tracker-frontend#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.1.2",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-preset-env": "^1.6.1",
+    "css-loader": "^0.28.7",
+    "eslint": "^4.14.0",
+    "eslint-plugin-babel": "^4.1.2",
+    "eslint-plugin-react": "^7.5.1",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "html-webpack-plugin": "^2.30.1",
+    "node-sass": "^4.7.2",
+    "raw-loader": "^0.5.1",
+    "redux-devtools": "^3.4.1",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.19.1",
+    "svgo": "^1.0.3",
+    "svgo-loader": "^2.1.0",
+    "webpack": "^3.10.0"
+  },
+  "dependencies": {
+    "file-loader": "^1.1.6",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-redux": "^5.0.6",
+    "react-responsive": "^4.0.3",
+    "react-router-dom": "^4.2.2",
+    "redux": "^3.7.2"
+  }
+}
