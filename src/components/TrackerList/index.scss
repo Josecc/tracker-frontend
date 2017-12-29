@@ -2,7 +2,9 @@
 
 .app-TrackerList {
   overflow: scroll;
-  height: calc(100% - 124px);
+  height: 100%;
+  padding: 3px 17px 8px 3px;
+  margin: -3px -17px 0 -3px;
 
   & > :first-child {
     margin-top: 0;

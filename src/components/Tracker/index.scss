@@ -4,18 +4,38 @@
   display: flex;
   flex-direction: row;
   margin: 10px 0;
+  user-select: none;
+  cursor: pointer;
+
+  &:hover > div {
+    box-shadow: $shadow;
+    background-color: lighten($blue, 8%);
+  }
+
+  &:active > div {
+    box-shadow: inset $shadow;
+    background-color: darken($blue, 3%);
+  }
+
+  &-selected > div,
+  &-selected:hover > div {
+    box-shadow: inset $shadow;
+    background-color: darken($blue, 3%);
+  }
 
   &-time {
-    background-color: $lightBlue;
-    margin-right: 5px;
+    transition: all 0.15s ease-in-out;
+    background-color: lighten($blue, 5%);
+    margin-left: 1.5px;
     writing-mode: tb-rl;
     text-align: center;
     padding: 0 8px;
   }
 
   &-details {
-    margin-left: 5px;
-    background-color: $lightBlue;
+    transition: all 0.15s ease-in-out;
+    margin-right: 1.5px;
+    background-color: lighten($blue, 5%);
     display: flex;
     flex-flow: row wrap;
     flex-grow: 1;

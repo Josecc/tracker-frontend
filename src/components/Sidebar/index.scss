@@ -3,11 +3,22 @@
 .app-Sidebar {
   flex-grow: 1;
   background-color: $blue;
-  padding: 22px;
+  padding: 22px 22px 14px;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
 
   & > h1 {
     text-align: center;
-    margin-top: 0;
+    margin: 8px 0;
+  }
+
+  & > hr {
+    display: block;
+    height: 3px;
+    border: 0;
+    border-top: 3px solid lighten($blue, 5%);
+    margin: 1em 0;
+    padding: 0;
   }
 }
