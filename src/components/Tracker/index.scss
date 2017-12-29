@@ -1,1 +1,25 @@
 @import 'stylesheets/variables';
+
+.app-Tracker {
+  display: flex;
+  flex-direction: row;
+  margin: 10px 0;
+
+  &-time {
+    background-color: $lightBlue;
+    margin-right: 5px;
+    writing-mode: tb-rl;
+    text-align: center;
+    padding: 0 8px;
+  }
+
+  &-details {
+    margin-left: 5px;
+    background-color: $lightBlue;
+    display: flex;
+    flex-flow: row wrap;
+    flex-grow: 1;
+    justify-content: space-between;
+    padding: 0 12.88px;
+  }
+}

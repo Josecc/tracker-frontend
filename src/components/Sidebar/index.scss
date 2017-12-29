@@ -4,6 +4,7 @@
   flex-grow: 1;
   background-color: $blue;
   padding: 22px;
+  overflow: hidden;
 
   & > h1 {
     text-align: center;

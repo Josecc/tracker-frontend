@@ -9,7 +9,7 @@ export function getTrackers(state = initialState, action = {}) {
         name: e.data.properties.sensor_name,
         locations: e.data.geometry.coordinates.reduce((acc, cur, index) => {
           acc.push({
-            time: e.data.properties.timestamp_array[index],
+            time: new Date(e.data.properties.timestamp_array[index]),
             x: cur[0],
             y: cur[1],
           });
